@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>smol</title>
+    <style>
+        #outer {
+            display: table;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #ED30CA;
+        }
+
+        #middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #inner {
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+        }
+    </style>
 </head>
 <body>
-  <img src="/keanu.png" />
+    <div id="outer">
+        <div id="middle">
+            <div id="inner">
+                <img src="./keanu.png" />
+            </div>
+        </div>
+    </div>
 </body>
